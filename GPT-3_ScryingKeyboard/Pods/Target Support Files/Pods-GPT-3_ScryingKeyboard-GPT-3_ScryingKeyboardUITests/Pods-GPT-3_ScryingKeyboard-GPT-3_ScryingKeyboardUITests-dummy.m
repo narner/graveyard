@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_GPT_3_ScryingKeyboard_GPT_3_ScryingKeyboardUITests : NSObject
+@end
+@implementation PodsDummy_Pods_GPT_3_ScryingKeyboard_GPT_3_ScryingKeyboardUITests
+@end

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jwz-5N-ogK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ARView-->
+        <scene sceneID="BH5-dK-WEP">
+            <objects>
+                <viewController id="Jwz-5N-ogK" userLabel="ARView" customClass="ViewController" customModule="EmotionRecognition_ARKit_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nBi-ZG-mzU" userLabel="ARView" customClass="ARView" customModule="RealityKit">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKn-ss-9HM" customClass="MessageLabel" customModule="EmotionRecognition_ARKit_Demo" customModuleProvider="target">
+                                <rect key="frame" x="5" y="49" width="330" height="40"/>
+                                <color key="backgroundColor" white="0.5" alpha="0.7965724032" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5s0-bK-2cO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yz3-2N-b5j" userLabel="Restart Experience">
+                                <rect key="frame" x="361" y="40" width="44" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="2kl-qU-6Tf"/>
+                                    <constraint firstAttribute="height" constant="59" id="Ncv-zQ-oa3"/>
+                                </constraints>
+                                <state key="normal" image="restart"/>
+                                <connections>
+                                    <action selector="restartButtonPressed:" destination="Jwz-5N-ogK" eventType="touchUpInside" id="4sK-5H-jon"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ybD-CL-JFw">
+                                <rect key="frame" x="78" y="338" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="rpn-Fq-47q"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sKn-ss-9HM" firstAttribute="top" secondItem="ecX-hS-ahH" secondAttribute="top" constant="5" id="0jB-dm-R7B"/>
+                            <constraint firstItem="ecX-hS-ahH" firstAttribute="bottom" secondItem="ybD-CL-JFw" secondAttribute="bottom" constant="396" id="2Wt-iF-wx1"/>
+                            <constraint firstItem="ecX-hS-ahH" firstAttribute="trailing" secondItem="ybD-CL-JFw" secondAttribute="trailing" constant="96" id="Z5f-0v-Kkk"/>
+                            <constraint firstItem="sKn-ss-9HM" firstAttribute="trailing" secondItem="yz3-2N-b5j" secondAttribute="leading" constant="5" id="efV-5l-RGN"/>
+                            <constraint firstItem="ecX-hS-ahH" firstAttribute="trailing" secondItem="yz3-2N-b5j" secondAttribute="trailing" constant="5" id="gY9-uF-Gxr"/>
+                            <constraint firstItem="sKn-ss-9HM" firstAttribute="leading" secondItem="ecX-hS-ahH" secondAttribute="leading" constant="5" id="yqs-tA-lSy"/>
+                            <constraint firstItem="ybD-CL-JFw" firstAttribute="leading" secondItem="ecX-hS-ahH" secondAttribute="leading" constant="78" id="zHZ-pK-QjE"/>
+                            <constraint firstItem="ecX-hS-ahH" firstAttribute="top" secondItem="yz3-2N-b5j" secondAttribute="top" constant="5" id="zeR-1y-Th4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ecX-hS-ahH"/>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="nBi-ZG-mzU" id="kcF-i0-Jil"/>
+                        <outlet property="messageLabel" destination="sKn-ss-9HM" id="K2D-z4-HeH"/>
+                        <outlet property="restartButton" destination="yz3-2N-b5j" id="Ftn-ss-mna"/>
+                        <outlet property="testView" destination="ybD-CL-JFw" id="igF-Xb-nWk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v6T-wq-zoW" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="restart" width="20" height="20"/>
+    </resources>
+</document>

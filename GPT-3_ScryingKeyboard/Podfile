@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'GPT-3_ScryingKeyboard' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for GPT-3_ScryingKeyboard
+	pod “Alamofire”
+	pod "SwiftyJSON"
+
+  target 'GPT-3_ScryingKeyboardTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'GPT-3_ScryingKeyboardUITests' do
+    # Pods for testing
+  end
+
+end

@@ -1,0 +1,6 @@
+framework module Pods_GPT_3_ScryingKeyboard_GPT_3_ScryingKeyboardUITests {
+  umbrella header "Pods-GPT-3_ScryingKeyboard-GPT-3_ScryingKeyboardUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
