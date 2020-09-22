@@ -17,7 +17,7 @@ Because a couple of roadblocks that I'll dis	cuss here, I wasn't able to complet
 
 In iOS 13, [Apple made it possible to access the raw frames from multiple cameras on the iPhone](https://developer.apple.com/videos/play/wwdc2019/249/#:~:text=Menu%20Close%20Menu-,Introducing%20Multi%2DCamera%20Capture%20for%20iOS,and%20the%20latest%20iPad%20Pro.) at once by using an instance of [AVCaptureMultiCamSession](). This would allow developers to create apps that would let you take photos or videos using both cameras at the same time: 
 
-![iOS-Multi-Camera](/Users/nickarner/Documents/MyWebsite/static/blog_assets/2020/iOS-Multi-Camera.png)
+![iOS-Multi-Camera](https://github.com/narner/graveyard/blob/master/Affective%20Computing%20and%20ARKit%20Apps%20(Blog%20Post%20Draft)/iOS-Multi-Camera.png)
 
 
 
@@ -102,7 +102,7 @@ The model is supposed to be able to distinguish between seven different emotiona
 * Neutral
   
 
-![ModelTest](/Users/nickarner/Documents/MyWebsite/static/blog_assets/2020/ModelTest.png)
+![ModelTest](https://github.com/narner/graveyard/blob/master/Affective%20Computing%20and%20ARKit%20Apps%20(Blog%20Post%20Draft)/ModelTest.png)
 
 
 
