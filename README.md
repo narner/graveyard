@@ -17,11 +17,11 @@ the emotions of virtual characters in the AR scene.
 
 Sadly, iOS doesn't allow for the sort of raw frame capture of multiple cameras if one of them performing an AR session. 
 
-* [I started to write up](https://github.com/narner/graveyard/tree/master/Affective%20Computing%20and%20ARKit%20Apps%20(Blog%20Post%20Draft)) about how this could 
+[I started to write up](https://github.com/narner/graveyard/tree/master/Affective%20Computing%20and%20ARKit%20Apps%20(Blog%20Post%20Draft)) about how this could 
 allow for affective computing + AR interface paradigms, but struggled to finish it in a clear manner. 
 
 
-[GPT-3 Scrying Keyboard](https://github.com/narner/graveyard/tree/master/GPT-3_ScryingKeyboard) - I was super excited to get access to the GPT-3 API, and had a 
+* [GPT-3 Scrying Keyboard](https://github.com/narner/graveyard/tree/master/GPT-3_ScryingKeyboard) - I was super excited to get access to the GPT-3 API, and had a 
 somewhat vague idea to build a project inspired by [Andy Matuschak](https://twitter.com/andy_matuschak)'s [scrying-pen project](https://github.com/andymatuschak/scrying-pen).
 
 Basically, I wanted to see what the GPT-3 API would send back as I was typing...to see how each character I entered affected what the API was doing. Didn't really
