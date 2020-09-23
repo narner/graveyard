@@ -7,7 +7,7 @@ If, for whatever reason; you're trying to clone this, make sure you have `git-lf
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 [QuietModemDemo](https://github.com/narner/graveyard/tree/master/QuietModem-Demo) - I was playing around with the [QuietModemKit](https://github.com/quiet/QuietModemKit), a data-over-sound framewwork. I was trying to see if I could make a modern version of a previous app I worked on, 
-[Whistlr] (https://nickarner.com/projects_and_work/whistlr/). The framework was pretty limited - could only send short character strings between mobile devices 
+[Whistlr](https://nickarner.com/projects_and_work/whistlr/). The framework was pretty limited - could only send short character strings between mobile devices 
 (though it could send pictures between a mobile device and a website), and the "ultrasonic" mode stil emitted a rather unpleasant audible tone. 
 
 [Emotion Recognition + ARKit](https://github.com/narner/graveyard/tree/master/EmotionRecognition%2BARKit%20Demo) - This was an experiment to see if it would be
